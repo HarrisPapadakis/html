@@ -1,32 +1,40 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>exercise1</title>
-<script>
-function myfunction() {
-document.getElementById("par2").innerHTML = "Duis eget 
-lorem";
-}
-</script>
+    <meta charset="utf-8">
+    <title>exercise1</title>
+    <script>
+        function myfunction() {
+            document.getElementById("par2").innerHTML = "Duis eget lorem";
+        }
+    </script>
 </head>
 
 <body>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at metus 
-eget felis tempus consectetur. Sed vel velit sit amet turpis congue faucibus 
-lacinia eu lacus. Proin id pharetra libero.</p>
-<P id="part2">Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate 
-eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus 
-viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam 
-ultricies nisi vel augue.</P>
-<p id="part1"></p>
-<script>
-document, getElementById("part1").innerHTML = "<p>
-ante, eleifend at risus at, eleifend ultricies erat. 
-Praesent sit amet aliquet tortor.Nulla lobortis velit ut nibh ultrices pharetra. 
-Nam maximus lacus vitae tellus eleifend tempor.Integer aliquam est quis enim molestie consectetur. 
-Sed molestie sagittis ipsum at scelerisque.Duis eu euismod</p >
-</script>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at metus
+        eget felis tempus consectetur. Sed vel velit sit amet turpis congue faucibus
+        lacinia eu lacus. Proin id pharetra libero.
+    </p>
+
+    <p id="par2">
+        Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+        eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+        viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
+        ultricies nisi vel augue.
+    </p>
+
+    <p id="part1"></p>
+
+    <script>
+        document.getElementById("part1").innerHTML = "<p>Ante, eleifend at risus at, eleifend ultricies erat.
+            Praesent sit amet aliquet tortor.Nulla lobortis velit ut nibh ultrices pharetra.
+            Nam maximus lacus vitae tellus eleifend tempor.Integer aliquam est quis enim molestie consectetur.
+            Sed molestie sagittis ipsum at scelerisque.Duis eu euismod.</p > ";
+    </script>
+
+    <button onclick="myfunction()">Change p2</button>
 </body>
 </html>
