@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.style-logo{
+margin-left: auto;
+margin-right: auto;
+display: block;
+} 
+
+.style-nav ul{
+list-style-type:none;
+}
+
+.style-nav ul li a{
+text-decoration:none;
+text-align:center;
+display: block;
+}
