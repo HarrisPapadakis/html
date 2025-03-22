@@ -1,18 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
-.style-logo{
-margin-left: auto;
-margin-right: auto;
-display: block;
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 } 
 
-.style-nav ul{
-list-style-type:none;
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-.style-nav ul li a{
-text-decoration:none;
-text-align:center;
-display: block;
-text-transform:uppercase;
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    display: inline-block;
+    color: black; /* Μπορείς να αλλάξεις το χρώμα αν θες */
 }
