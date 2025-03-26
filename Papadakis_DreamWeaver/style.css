@@ -1,26 +1,45 @@
-@charset "utf-8";
+ @charset "utf-8";
 /* CSS Document */
-.logo {
+html{
+padding:0px;
+margin:0px;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+ 
+.style-logo {
     margin-left: auto;
     margin-right: auto;
     display: block;
 } 
 
-.nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+.style-nav ul {
+    list-style-type:none;
 }
 
-.nav ul li {
-    display: inline-block;
-}
-
-.nav ul li a {
+.style-nav ul li a {
     text-decoration: none;
+	text-align:center;
+	display:block;
     text-transform: uppercase;
-    padding: 6px 12px;
-    display: inline-block;
-    color: black; /* Μπορείς να αλλάξεις το χρώμα αν θες */
+    padding: 8px;
+    color:#2f322A; 
+}
+header{
+	padding:32px; 
+}
+@media(min-width:768px){
+	.style-nav ul li{
+		display:inline-block;
+	} 
+	.style-nav ul{
+		text-align:center;
+	}
+}
+@media(min-width:1024px){
+	.style-logo{
+		float:left;
+	}  
+	.style-nav ul{
+		float:right;
+	}
 }
