@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project 3</title>
+<script>
+function hover(btn) {
+    btn.style.background = "blue";
+    btn.style.color = "yellow";
+}
+
+function out(btn) {
+    btn.style.background = "yellow";
+    btn.style.color = "blue";
+}
+</script>
+</head>
+
+<body>
+<button style="background-color:yellow; color:blue;"
+    onmouseover="hover(this)"
+    onmouseout="out(this)">
+    Hover Over Me
+</button>
+
+<script>
+    var name = prompt("Please type your name");
+    var surname = prompt("Please type your surname");
+    alert("The name is " + name + " and the surname is " + surname + "!");
+</script>
+
+</body>
+</html>
