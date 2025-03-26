@@ -3,30 +3,35 @@
 <head>
 <meta charset="utf-8">
 <title>Project 3</title>
+
+<!-- JavaScript functions to change button colors on hover -->
 <script>
 function hover(btn) {
-    btn.style.background = "blue";
-    btn.style.color = "yellow";
+    btn.style.background = "blue"; // Change background to blue
+    btn.style.color = "yellow"; // Change text color to yellow
 }
 
 function out(btn) {
-    btn.style.background = "yellow";
-    btn.style.color = "blue";
+    btn.style.background = "yellow"; // Reset background to yellow
+    btn.style.color = "blue"; // Reset text color to blue
 }
 </script>
 </head>
 
 <body>
+
+<!-- Button that changes color when hovered over -->
 <button style="background-color:yellow; color:blue;"
-    onmouseover="hover(this)"
-    onmouseout="out(this)">
+    onmouseover="hover(this)"  <!-- Calls hover function when mouse is over -->
+    onmouseout="out(this)">  <!-- Calls out function when mouse leaves -->
     Hover Over Me
 </button>
 
+<!-- JavaScript to prompt the user for their name and surname -->
 <script>
-    var name = prompt("Please type your name");
-    var surname = prompt("Please type your surname");
-    alert("The name is " + name + " and the surname is " + surname + "!");
+    var name = prompt("Please type your name"); // Ask for user's name
+    var surname = prompt("Please type your surname"); // Ask for user's surname
+    alert("The name is " + name + " and the surname is " + surname + "!"); // Show an alert with the input
 </script>
 
 </body>
