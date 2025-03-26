@@ -1,45 +1,56 @@
- @charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
-html{
-padding:0px;
-margin:0px;
-font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+
+/* Reset default padding and margin for the entire page */
+html {
+    padding: 0px;
+    margin: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
- 
+
+/* Center the logo horizontally */
 .style-logo {
     margin-left: auto;
     margin-right: auto;
     display: block;
-} 
+}
 
+/* Remove bullet points from the navigation list */
 .style-nav ul {
-    list-style-type:none;
+    list-style-type: none;
 }
 
+/* Style for navigation links */
 .style-nav ul li a {
-    text-decoration: none;
-	text-align:center;
-	display:block;
-    text-transform: uppercase;
+    text-decoration: none; /* Remove underline from links */
+    text-align: center;
+    display: block;
+    text-transform: uppercase; /* Convert text to uppercase */
     padding: 8px;
-    color:#2f322A; 
+    color: #2f322A; /* Dark color for the text */
 }
-header{
-	padding:32px; 
+
+/* Add padding to the header */
+header {
+    padding: 32px;
 }
-@media(min-width:768px){
-	.style-nav ul li{
-		display:inline-block;
-	} 
-	.style-nav ul{
-		text-align:center;
-	}
+
+/* Styles for screens 768px and wider */
+@media (min-width: 768px) {
+    .style-nav ul li {
+        display: inline-block; /* Display navigation items inline */
+    }
+    .style-nav ul {
+        text-align: center; /* Center align the navigation */
+    }
 }
-@media(min-width:1024px){
-	.style-logo{
-		float:left;
-	}  
-	.style-nav ul{
-		float:right;
-	}
+
+/* Styles for screens 1024px and wider */
+@media (min-width: 1024px) {
+    .style-logo {
+        float: left; /* Align the logo to the left */
+    }
+    .style-nav ul {
+        float: right; /* Align the navigation to the right */
+    }
 }
