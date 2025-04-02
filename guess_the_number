@@ -2,24 +2,34 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Number Guessing Game</title>
 </head>
 
 <body>
 <script>
-rand=Math.floor(Math.random()*10)+1;
+// Generate a random number between 1 and 10
+rand = Math.floor(Math.random() * 10) + 1;
+
 do {
-x=prompt("Μάντεψε τον αριθμό");
-if(x>rand) {
-alert("Ο αριθμός που έδωσες είναι μεγαλύτερος");	
-}
-if(x<rand){
-alert("Ο αριθμός που έδωσες είναι μικρότερος");	
-}
-}while(x!=rand);
+    // Prompt the user to guess the number
+    x = prompt("Guess the number");
 
-alert("ΒΡΗΚΕΣ ΤΟΝ ΑΡΙΘΜΟ "+x+"!");
+    // Check if the guessed number is greater than the random number
+    if (x > rand) {
+        alert("The number you entered is too high");
+    }
 
+    // Check if the guessed number is smaller than the random number
+    if (x < rand) {
+        alert("The number you entered is too low");
+    }
+
+// Continue looping until the user guesses the correct number
+} while (x != rand);
+
+// Display a success message when the correct number is guessed
+alert("YOU FOUND THE NUMBER " + x + "!");
 </script>
 </body>
 </html>
+
