@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>project3</title>
+
+<script>
+// Function to change button color on hover
+function hover(btn) {
+    btn.style.background = "blue";  // Change background color to blue
+    btn.style.color = "yellow";     // Change text color to yellow
+}
+
+// Function to restore original button color when mouse leaves
+function out(btn) {
+    btn.style.background = "yellow";  // Restore background color to yellow
+    btn.style.color = "blue";         // Restore text color to blue
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Prompt the user to enter their first name
+    let name = prompt("Please enter your first name") || "Unknown";
+
+    // Prompt the user to enter their last name
+    let surname = prompt("Please enter your last name") || "Unknown";
+
+    // Display an alert with the entered name and surname
+    alert(`The name is ${name} and the surname is ${surname}!`);
+});
+</script>
+
+</head>
+<body>
+
+<!-- Button with event listeners for hover effects -->
+<button id="hoverButton" style="background-color:yellow; color:blue">
+    Button
+</button>
+
+<script>
+// Attach event listeners instead of inline attributes
+document.getElementById("hoverButton").addEventListener("mouseover", function() {
+    hover(this);
+});
+
+document.getElementById("hoverButton").addEventListener("mouseout", function() {
+    out(this);
+});
+</script>
+
+</body>
+</html>
