@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>project3</title>
+<script>
+function hover(btn)
+{
+btn.style.background="blue";
+btn.style.color="yellow";
+return;
+}
+function out(btn)	
+{
+btn.style.background="yellow";
+btn.style.color="blue";
+return;	
+}
+</script>
+</head>
+<body>
+	<button style="background-color:yellow; color:blue" onmouseover="hover(this)" onmouseout="out(this)">Button</button>
+<script>
+var name = prompt("Παρακαλώ εισάγετε το όνομα σας");
+var surname=prompt("Παρακαλώ εισάγετε το επίθετο σας");
+alert("Το όνομα είναι "+name+" και το επίθετο "+surname+"!");	
+</script>	
+</body>
+</html>
