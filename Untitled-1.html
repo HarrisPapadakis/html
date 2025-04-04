@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>exercise1</title>
+<script>
+function myfunction(){
+document.getElementById("par2").innerHTML="Duis eget lorem";	
+}	
+</script>
+</head>
+
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at metus eget felis tempus consectetur. Sed vel velit sit amet turpis congue faucibus lacinia eu lacus. Proin id pharetra libero, et feugiat leo. Duis at laoreet dolor. Praesent mollis vulputate volutpat. Vivamus dapibus, odio quis sollicitudin dignissim, elit neque viverra lacus</p>
+<p id="par2">Duis eget lorem vehicula, fermentum eros vitae, bibendum turpis. Maecenas vestibulum blandit sem in consequat. In quis quam commodo, facilisis lectus pretium</p>
+<p id="par1"></p>
+<script>
+document.getElementById("par1").innerHTML="Ut mi ante, eleifend at risus at, eleifend ultricies erat. Praesent sit amet aliquet tortor. Nulla lobortis velit ut nibh ultrices pharetra. Nam maximus lacus vitae tellus eleifend tempor. Integer aliquam est quis enim molestie consectetur. Sed molestie sagittis ipsum at scelerisque. Duis eu euismod libero";
+</script>
+<button onclick="myfunction()">Change p2</button>
+<button onClick="location.reload()">Reload</button>
+</body>
+</html>
