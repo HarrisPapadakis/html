@@ -38,7 +38,29 @@ header {
 	background-image: url("Images/hero.jpg");
 	background-size: cover;
 	text-align: center;
-	color: #FFFFFF
+	color: #FFFFFF;
+	padding:20px 20px 50px 20px;
+}
+h4 {
+	font-size: 16px;
+	margin-bottom: 35px;
+}
+h1 {
+	font-size: 57px;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+h3{
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 120px;
+}
+.button{
+	border:2px #FFFFFF solid;
+	padding:10px  30px;
+	border-radius: 30px;
+	color: #FFFFFF;
+	text-decoration: none;
 }
 /* Styles for screens 768px and wider */
 @media (min-width: 768px) {
