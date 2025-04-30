@@ -1,83 +1,75 @@
-@charset "utf-8";
-/* CSS Document */
-
-/* Reset default padding and margin for the entire page */
-html {
-    padding: 0px;
-    margin: 0px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+/* Γενικά στυλ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
 }
 
-/* Center the logo horizontally */
 .style-logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  max-height: 60px;
 }
 
-/* Remove bullet points from the navigation list */
 .style-nav ul {
-    list-style-type: none;
+  list-style: none;
+  padding-left: 0;
 }
 
-/* Style for navigation links */
 .style-nav ul li a {
-    text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.style-nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Hero section */
+.hero {
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.button,
+.btn {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Info boxes */
+.info-box-tan {
+  background-color: #f8e9d2;
+  border-radius: 6px;
+  padding: 20px;
+  height: 100%;
+}
+
+.info-box-dark {
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  padding: 20px;
+  height: 100%;
+}
+
+/* Footer */
+.footer-text {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .style-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
     text-align: center;
-    display: block;
-    text-transform: uppercase; /* Convert text to uppercase */
-    padding: 8px;
-    color: #2f322A; /* Dark color for the text */
-}
-
-/* Add padding to the header */
-header {
-    padding: 32px;
-}
-.hero{
-	background-image: url("Images/hero.jpg");
-	background-size: cover;
-	text-align: center;
-	color: #FFFFFF;
-	padding:20px 20px 50px 20px;
-}
-h4 {
-	font-size: 16px;
-	margin-bottom: 35px;
-}
-h1 {
-	font-size: 57px;
-	text-transform: uppercase;
-	margin-bottom: 60px;
-}
-h3{
-	font-size: 16px;
-	text-transform: uppercase;
-	margin-bottom: 120px;
-}
-.button{
-	border:2px #FFFFFF solid;
-	padding:10px  30px;
-	border-radius: 30px;
-	color: #FFFFFF;
-	text-decoration: none;
-}
-/* Styles for screens 768px and wider */
-@media (min-width: 768px) {
-    .style-nav ul li {
-        display: inline-block; /* Display navigation items inline */
-    }
-    .style-nav ul {
-        text-align: center; /* Center align the navigation */
-    }
-}
-
-/* Styles for screens 1024px and wider */
-@media (min-width: 1024px) {
-    .style-logo {
-        float: left; /* Align the logo to the left */
-    }
-    .style-nav ul {
-        float: right; /* Align the navigation to the right */
-    }
+  }
 }
