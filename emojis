@@ -2,30 +2,69 @@
 <html lang="el">
 <head>
   <meta charset="UTF-8">
-  <title>Εμφάνιση Emojis</title>
+  <title>Μαγικά Πετούμενα Emojis</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: #222;
-      position: relative; /* Απαραίτητο για να λειτουργεί το position: absolute στο .emojis */
+      background: #111;
       overflow: hidden;
+      position: relative;
     }
 
-    .emojis {
-      width: 100%;
-      height: fit-content;
+    .emoji {
       position: absolute;
-      text-align: center;
-      bottom: -80px;
-      font-size: 40px;
+      bottom: -50px;
+      font-size: 2rem;
       color: white;
-      filter: drop-shadow(0 0 10px #ffffff3f);
+      filter: drop-shadow(0 0 10px #fff);
+      animation-name: floatUp;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
+
+  <script>
+    const emojis = ['✨', '🎉', '💫', '🌟', '🔥', '❤️', '🦋', '🌈'];
+    const total = 30;
+
+    for (let i = 0; i < total; i++) {
+      const span = document.createElement('span');
+      span.className = 'emoji';
+      span.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+
+      // Τυχαία οριζόντια θέση
+      span.style.left = `${Math.random() * 100}vw`;
+
+      // Τυχαίο μέγεθος
+      const size = 20 + Math.random() * 30;
+      span.style.fontSize = `${size}px`;
+
+      // Τυχαία καθυστέρηση animation
+      span.style.animationDuration = `${3 + Math.random() * 5}s`;
+      span.style.animationDelay = `${Math.random() * 3}s`;
+
+      document.body.appendChild(span);
+    }
+  </script>
+
+</body>
+</html>
+
 
   <div class="emojis">🌟✨🎉💫🔥</div>
 
