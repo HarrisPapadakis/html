@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Τρίλιζα</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f8f8;
+    }
+
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 10px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      font-size: 2em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Παιχνίδι Τρίλιζα</h1>
+  <div id="board">
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+  </div>
+  <h2 id="status"></h2>
+  <button onclick="resetGame()">Ξεκίνα ξανά</button>
+
+  <script>
+    const btnRef = document.querySelectorAll(".box");
+    const statusText = document.getElementById("status");
+    let currentPlayer = "X";
+    let gameActive = true;
+
+    const winningPattern = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+
+    btnRef.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        if (button.innerText === "" && gameActive) {
+          button.innerText = currentPlayer;
+          winChecker();
+          currentPlayer = currentPlayer === "X" ? "O" : "X";
+        }
+      });
+    });
+
+    const winFunction = (winner) => {
+      statusText.innerText = `${winner} κερδίζει! 🎉`;
+      gameActive = false;
+    };
+
+    const winChecker = () => {
+      for (let i of winningPattern) {
+        let [a, b, c] = [
+          btnRef[i[0]].innerText,
+          btnRef[i[1]].innerText,
+          btnRef[i[2]].innerText,
+        ];
+
+        if (a !== "" && a === b && b === c) {
+          winFunction(a);
+          return;
+        }
+      }
+
+      if ([...btnRef].every(btn => btn.innerText !== "") && gameActive) {
+        statusText.innerText = "Ισοπαλία!";
+        gameActive = false;
+      }
+    };
+
+    const resetGame = () => {
+      btnRef.forEach(btn => (btn.innerText = ""));
+      currentPlayer = "X";
+      statusText.innerText = "";
+      gameActive = true;
+    };
+  </script>
+</body>
+</html>
