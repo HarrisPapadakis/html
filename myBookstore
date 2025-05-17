@@ -75,29 +75,34 @@
 	      <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1"> Λογοτεχνία</a> </h5>
         </div>
 	    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
-	      <div class="card-body">Content for Accordion Panel 1</div>
-			<div class="card-body">Content for Accordion Panel 1</div>
-			<div class="card-body">Content for Accordion Panel 1</div>
+	      <div class="card-body">Ανθολογίες</div>
+			<div class="card-body">Βιογραφίες</div>
+			<div class="card-body">Διήγημα</div>
+			<div class="card-body">Μυθηστόρημα</div>
+			<div class="card-body">Νουβέλα</div>
+			<div class="card-body">Ποίηση</div>
+			
         </div>
     </div>
-	  <div class="card">
-	    <div class="card-header" role="tab" id="headingTwo1">
-	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1"> Collapsible Group 2 </a> </h5>
+	  <div class="card-header" role="tab" id="headingOne1">
+	      <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1"> Επιστήμες</a> </h5>
         </div>
 	    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
-	      <div class="card-body">Content for Accordion Panel 2</div>
+	      <div class="card-body">Ανθρωπολογία</div>
+			<div class="card-body">Ιατρική</div>
+			<div class="card-body">Οικονομικά</div>
+			<div class="card-body">Πολιτική</div>
         </div>
     </div>
 	  <div class="card">
 	    <div class="card-header" role="tab" id="headingThree1">
-	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1"> Collapsible Group 3 </a> </h5>
+	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1">Εκπαιδευτικά</a> </h5>
         </div>
 	    <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
-	      <div class="card-body">Content for Accordion Panel 3</div>
+	      <div class="card-body">Εγκυκλοπαίδειες</div>
         </div>
     </div>
   </div>
-</div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
