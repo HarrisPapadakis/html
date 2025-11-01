@@ -1,0 +1,9 @@
+Flask>=2.2
+pillow>=10.0
+qrcode[pil]>=7.4
+python-dotenv>=1.0
+boto3>=1.28  # Flask
+Werkzeug
+Pillow
+qrcode
+python-dotenv
