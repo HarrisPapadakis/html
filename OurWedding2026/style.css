@@ -4,7 +4,31 @@ body {
   margin-top: 50px;
 }
 
-input, button {
+#dropArea {
+  width: 80%;
+  max-width: 400px;
+  height: 150px;
+  margin: 20px auto;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#dropArea.hover {
+  background-color: #e0ffe0;
+  border-color: #4caf50;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
   margin: 10px;
   padding: 8px;
 }
@@ -31,3 +55,4 @@ input, button {
   margin-top: 20px;
   font-weight: bold;
 }
+
