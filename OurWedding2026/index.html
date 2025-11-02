@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upload to Firebase with Progress</title>
+  <title>Firebase Upload with Drag & Drop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Upload File to Firebase</h1>
-  <input type="file" id="fileInput">
+
+  <!-- Drag & Drop area -->
+  <div id="dropArea">
+    <p>Drag & drop a file here, or click to select</p>
+    <input type="file" id="fileInput">
+  </div>
+
   <button id="uploadBtn">Upload</button>
 
   <div id="progressContainer">
@@ -21,3 +27,4 @@
   <script type="module" src="script.js"></script>
 </body>
 </html>
+
